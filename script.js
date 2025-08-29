@@ -92,9 +92,9 @@ const monsters = [
 ];
 
 // initialize buttons
-button1.addEventListener("click", goStore);
-button2.addEventListener("click", goCave);
-button3.addEventListener("click", fightDragon);
+button1.onclick = goStore;
+button2.onclick = goCave
+button3.onclick = fightDragon;
 
 function update(location) {
     monsterStats.style.display = "none";
@@ -287,4 +287,5 @@ function sellWeapon() {
         lose();
         }
     }
+
     }
